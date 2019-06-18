@@ -56,12 +56,8 @@ public class ExcelReader {
 	                }
 		            allvalues.add(rowline);
 	            }
-	            try {
-	            	if(columnindex != 7 || columnindex != 5)
-	    				throw new FileError();
-	            }catch(FileError e) {
-	    			System.out.println(e.getMessage());
-	    		} 
+	            allvalues.add(0,Integer.toString(columnindex));
+	            
 	 
 	        }catch(Exception e) {
 	            e.printStackTrace();
@@ -71,3 +67,6 @@ public class ExcelReader {
 	    }
 	 
 	}
+
+
+

@@ -1,7 +1,7 @@
 package edu.handong.csee.java;
 
 import edu.handong.csee.java.utils.*;
-import edu.handong.csee.java.parser.*;
+import edu.handong.csee.java.Writer.*;
 
 import java.io.*;
 import org.apache.commons.cli.*;
@@ -24,7 +24,7 @@ public class Handler {
 				System.exit(0);
 			}
 			context=ZipReader.readzip(input);
-
+			filewriter.writeFile(context,output);
 		}
 		
 	}

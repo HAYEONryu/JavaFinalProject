@@ -20,6 +20,7 @@ public class ZipReader {
 
 				ExcelReader Handleer_xlsx = new ExcelReader();
 				context.addAll(Handleer_xlsx.getData(filepath ,name ));
+				context.add("#");
 			}
 			zipFile.close();
 			} catch (IOException ex) {
