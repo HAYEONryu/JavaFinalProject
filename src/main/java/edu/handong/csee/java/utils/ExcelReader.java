@@ -8,7 +8,7 @@ import org.apache.poi.ss.usermodel.CellType;
 public class ExcelReader {
 	public ArrayList<String> getData(InputStream is, String name) {
 
-		ArrayList<String> allvalues = new ArrayList<String>();
+		ArrayList<String> allvalues = new ArrayList<>();
 		String rowline = name + ",";
 
 		try {
@@ -60,7 +60,7 @@ public class ExcelReader {
 				allvalues.add(rowline);
 				rowline = "";
 			}
-			allvalues.add(0, Integer.toString(columnindex));
+			//allvalues.add(0, Integer.toString(columnindex));
 
 			workbook.close();
 

@@ -29,7 +29,8 @@ public class Handler {
 			
 			
 			
-			filewriter.writeFile(ZipReader.innerContext, output.substring(0, output.indexOf(".")));
+			filewriter.writeFile(ZipReader.innerContext1, output.substring(0, output.indexOf(".")), 1);
+			filewriter.writeFile(ZipReader.innerContext2, output.substring(0, output.indexOf(".")), 2);
 		}
 		
 	}
