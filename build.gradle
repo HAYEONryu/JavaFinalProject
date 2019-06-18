@@ -20,6 +20,10 @@ repositories {
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
+    
+    // https://mvnrepository.com/artifact/org.apache.ant/ant
+	compile group: 'org.apache.ant', name: 'ant', version: '1.10.6'
+    
   
     // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
 	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.0'

@@ -42,17 +42,17 @@ public class filewriter {
 			BufferedWriter fw;
 			if(ouputpath.contains("C:\\"))
 			{
-				fw = new BufferedWriter(new FileWriter(ouputpath+"summaryfile_integration"+ ".csv", true));
+				fw = new BufferedWriter(new FileWriter(ouputpath+"1"+ ".csv", true));
 			}
 			else
 			{
-				fw = new BufferedWriter(new FileWriter("C:\\Users\\User\\Downloads\\" + ouputpath+".csv", true));
+				fw = new BufferedWriter(new FileWriter(ouputpath+".csv", true));
 			}
 		for(String w : summaryfile){
 			colums++;
 			fw.write(w);
 			fw.write(",");
-			if( colums%7 == 0) {
+			if( colums%8 == 0) {
 				fw.newLine();
 			}
 		}
@@ -68,17 +68,17 @@ public class filewriter {
 			BufferedWriter fw;
 			if(ouputpath.contains("C:\\"))
 			{
-				fw = new BufferedWriter(new FileWriter(ouputpath+"tablefile_integration"+".csv", true));
+				fw = new BufferedWriter(new FileWriter(ouputpath+"2"+".csv", true));
 			}
 			else
 			{
-				fw = new BufferedWriter(new FileWriter("C:\\Users\\User\\Downloads\\" + ouputpath+".csv", true));
+				fw = new BufferedWriter(new FileWriter(ouputpath+".csv", true));
 			}
 		for(String w : tablefile){
 			colums++;
 			fw.write(w);
 			fw.write(",");
-			if( colums%5 == 0) {
+			if( colums%6 == 0) {
 				fw.newLine();
 			}
 		}

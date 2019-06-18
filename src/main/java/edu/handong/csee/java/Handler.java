@@ -23,8 +23,13 @@ public class Handler {
 				printHelp(options);
 				System.exit(0);
 			}
-			context=ZipReader.readzip(input);
-			filewriter.writeFile(context,output);
+			
+			ZipReader.readZip(input);
+			//context=ZipReader.readZip(input);
+			
+			
+			
+			filewriter.writeFile(ZipReader.innerContext, output.substring(0, output.indexOf(".")));
 		}
 		
 	}
